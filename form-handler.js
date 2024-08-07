@@ -3,7 +3,7 @@ document.getElementById('freeturkey').addEventListener('submit', function(event)
 
     let formData = new FormData(this);
 
-    fetch('https://script.google.com/macros/s/AKfycbyMEF2SRz2FV_4oDWK1s66b4T1Hq3Px379eu57SMenv2MaJPauMkbIBKNtE2cPJatJ9/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwZML4y0A6qo9aI91Vavq8bVaA9j7ByQDHaTsGvHFhzF2K-EA6UXJ1MHGkBqvyFl5WZ/exec', {
         method: 'POST',
         body: JSON.stringify({
             name: formData.get('name'),
@@ -18,7 +18,7 @@ document.getElementById('freeturkey').addEventListener('submit', function(event)
         document.getElementById('message').innerText = 'Thank you for your support!';
         document.getElementById('freeturkey').reset(); // Optional: Reset the form after submission
         // Update signature count
-        fetch('https://script.google.com/macros/s/AKfycbyMEF2SRz2FV_4oDWK1s66b4T1Hq3Px379eu57SMenv2MaJPauMkbIBKNtE2cPJatJ9/exec')
+        fetch('https://script.google.com/macros/s/AKfycbwZML4y0A6qo9aI91Vavq8bVaA9j7ByQDHaTsGvHFhzF2K-EA6UXJ1MHGkBqvyFl5WZ/exec')
             .then(response => response.text())
             .then(count => {
                 document.getElementById('signature-count').innerText = count;
