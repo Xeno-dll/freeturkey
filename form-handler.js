@@ -1,4 +1,4 @@
-document.getElementById('petition-form').addEventListener('submit', function(event) {
+document.getElementById('freeturkey').addEventListener('submit', function(event) {
     event.preventDefault();
 
     let formData = new FormData(this);
